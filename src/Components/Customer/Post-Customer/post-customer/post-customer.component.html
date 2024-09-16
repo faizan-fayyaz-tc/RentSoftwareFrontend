@@ -1,0 +1,18 @@
+<div class="container mt-4">
+    <h2>Post a Customer</h2>
+    <form (ngSubmit)="onSubmit()" #customerForm="ngForm">
+      <div class="mb-3">
+        <label for="customerName" class="form-label">Customer Name</label>
+        <input
+          type="text"
+          id="customerName"
+          class="form-control"
+          [(ngModel)]="customer.customerName"
+          name="customerName"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  

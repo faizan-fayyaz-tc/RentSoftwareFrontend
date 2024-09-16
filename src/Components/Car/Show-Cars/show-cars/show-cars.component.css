@@ -1,0 +1,43 @@
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fdfdfd; /* Light background color */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  padding: 1.5rem;
+  background: #fff; /* White background for card body */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #007bff; /* Vibrant blue */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d; /* Soft gray */
+}
+
+/* Optional: Add styles for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Custom heading styles */
+.custom-heading {
+  font-size: 2rem; /* Larger font size for emphasis */
+  color: #ff5733; /* Example color: bright orange */
+  margin-bottom: 1.5rem; /* Space below the heading */
+}
+

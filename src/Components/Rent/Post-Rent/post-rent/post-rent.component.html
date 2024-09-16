@@ -1,0 +1,72 @@
+<form (ngSubmit)="onSubmit()" class="container mt-5">
+  <div class="row mb-3">
+    <label for="rentDate" class="form-label col-sm-2">Rent Date:</label>
+    <div class="col-sm-10">
+      <input
+        type="datetime-local"
+        id="rentDate"
+        class="form-control"
+        [(ngModel)]="rent.rentDate"
+        name="rentDate"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="agent" class="form-label col-sm-2">Agent:</label>
+    <div class="col-sm-10">
+      <select
+        id="agent"
+        class="form-select"
+        [(ngModel)]="rent.agentId"
+        name="agentId"
+        required
+      >
+        <option *ngFor="let agent of agents" [value]="agent.agentId">
+          {{ agent.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="car" class="form-label col-sm-2">Car:</label>
+    <div class="col-sm-10">
+      <select
+        id="car"
+        class="form-select"
+        [(ngModel)]="rent.carId"
+        name="carId"
+        required
+      >
+        <option *ngFor="let car of cars" [value]="car.carId">
+          {{ car.carModel }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="customer" class="form-label col-sm-2">Customer:</label>
+    <div class="col-sm-10">
+      <select
+        id="customer"
+        class="form-select"
+        [(ngModel)]="rent.customerId"
+        name="customerId"
+        required
+      >
+        <option *ngFor="let customer of customers" [value]="customer.customerId">
+          {{ customer.customerName }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10 offset-sm-2">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>

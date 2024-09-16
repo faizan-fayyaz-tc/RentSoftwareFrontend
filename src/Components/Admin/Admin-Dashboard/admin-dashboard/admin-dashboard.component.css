@@ -1,0 +1,51 @@
+.custom-tag-line{
+    color: green;
+    margin-right: 20;
+}
+.custom-brand-text{
+    color: chocolate;
+}
+.btn-logout{
+    color: red;
+    padding-left: 10;
+}
+/* Add shadow to the card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border: none; /* Optional: removes default card border */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Customize card title color */
+  .card-title {
+    color: #007bff; /* Blue color for car model */
+    font-weight: bold; /* Optional: make the text bold */
+  }
+  
+  /* Customize data text color */
+  .card-text {
+    color: #495057; /* Gray color for data */
+  }
+  
+  /* Customize buttons */
+  .btn-warning {
+    background-color: #ffc107; /* Customize button color */
+    border: none;
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Customize button color */
+    border: none;
+  }
+  
+  /* Ensure buttons have white text */
+  .btn-warning, .btn-danger {
+    color: #fff; /* White text color */
+  }
+  

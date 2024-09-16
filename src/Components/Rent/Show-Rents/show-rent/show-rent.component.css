@@ -1,0 +1,34 @@
+/* Custom heading styles */
+.custom-heading {
+    font-size: 2rem; /* Larger font size for emphasis */
+    color: #ff5733; /* Example color: bright orange */
+    margin-bottom: 1.5rem; /* Space below the heading */
+  }
+  
+  /* Additional styles for card and text */
+  .card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .card-body {
+    padding: 1.5rem; /* Padding inside the card */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Slightly larger font for title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Normal font size for text */
+  }
+  
+  .text-primary {
+    color: #007bff; /* Primary color (blue) */
+  }
+  
+  .text-secondary {
+    color: #6c757d; /* Secondary color (gray) */
+  }
+  

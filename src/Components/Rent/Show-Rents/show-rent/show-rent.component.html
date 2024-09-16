@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <!-- Heading for the rent list -->
+    <h2 class="text-center mb-4 custom-heading">List of Rents</h2>
+  
+    <div class="row">
+      <div class="col-md-4" *ngFor="let rent of rents">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Rent ID: {{ rent.rentId }}</h5>
+            <p class="card-text text-secondary">Rent Date: {{ rent.rentDate | date }}</p>
+            <p class="card-text text-secondary">Car Model: {{ rent.car?.carModel }}</p>
+            <p class="card-text text-secondary">Customer Name: {{ rent.customer?.customerName }}</p>
+            <p class="card-text text-secondary">Agent: {{ rent.agent?.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

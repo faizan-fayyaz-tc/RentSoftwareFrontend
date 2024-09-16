@@ -1,0 +1,27 @@
+<div class="container d-flex align-items-center justify-content-center vh-100">
+    <div class="card shadow-lg" style="width: 30rem;">
+      <div class="card-header text-center bg-primary text-white">
+        <h4>Admin Login</h4>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="onSubmit()" #adminForm="ngForm">
+          <div class="mb-3">
+            <label for="adminName" class="form-label">Admin Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="adminName"
+              placeholder="Enter Admin Name"
+              required
+              [(ngModel)]="agent.name"  
+              name="adminName"
+            />
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success" [disabled]="!adminForm.form.valid">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
